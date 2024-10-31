@@ -1,7 +1,14 @@
 body{
-    background-color: red;
+    background-color:red;
 }
-h1, h2, h3, h4, h5, h6 {
+.hot{
+    border-radius: 20px;
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     text-align: center;
-    margin: 32px;
+    padding-bottom: 20px;
 }
