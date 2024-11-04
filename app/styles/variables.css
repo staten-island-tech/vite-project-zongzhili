@@ -1,14 +1,39 @@
-body{
-    background-color:red;
+html, body, * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
 }
-.hot{
+.hot, .cold{
     border-radius: 20px;
     margin: 0 auto;
     border: 2px solid black;
-    width: 200px;
-    height: 100px;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
     text-align: center;
-    padding-bottom: 20px;
+}
+.hot{
+    background-color:rgb(242, 96, 18);
+}
+.cold{
+    background-color:rgb(18, 212, 242);
+}
+img {
+    margin: 0 auto;
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-content: center;
 }
