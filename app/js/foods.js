@@ -7,7 +7,7 @@ export function setupCounter(element) {
   element.addEventListener("click", () => setCounter(counter + 1));
   setCounter(0);
 }
-const hotFoods = [
+const foodProducts = [
   {
     item: "Spicy Ramen",
     price: 12.99,
@@ -78,21 +78,6 @@ const hotFoods = [
     image:
       "https://i0.wp.com/evseats.com/wp-content/uploads/2022/06/saucy-jerk-chicken-wings.-1-scaled.jpg?resize=720%2C720&ssl=1",
   },
-];
-
-const container = document.getElementById("container");
-
-hotFoods.forEach((spicy) => {
-  container.insertAdjacentHTML(
-    "beforeend",
-    `<div class="hot">
-      <img src="${spicy.image}" alt="${spicy.item}">
-      <p>${spicy.item} - $${spicy.price} (${spicy.nationality})</p>
-    </div>`
-  );
-});
-
-const coldFoods = [
   {
     item: "Caesar Salad",
     price: 9.5,
@@ -165,12 +150,19 @@ const coldFoods = [
   },
 ];
 
-coldFoods.forEach((food) => {
+const container = document.getElementById("container");
+
+foodProducts.forEach((food) => {
   container.insertAdjacentHTML(
     "beforeend",
-    `<div class="cold">
+    `<div class = "foods">
       <img src="${food.image}" alt="${food.item}">
       <p>${food.item} - $${food.price} (${food.nationality})</p>
     </div>`
   );
 });
+
+foodProducts.filter((food) => {
+  food.price >= 10;
+});
+console.log("Expensive Foods", food.price);
