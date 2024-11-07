@@ -22,12 +22,7 @@ html, body, * {
   -moz-osx-font-smoothing: grayscale;
 }*/
 
-h1 {
-  font-size: 50px;
-  text-align: center;
-}
-p{
-  font-size: 20px;
+h1,p {
   text-align: center;
 }
 

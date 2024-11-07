@@ -1,11 +1,16 @@
 import "/styles/style.css";
-import { setupCounter } from "./foods.js";
-
-setupCounter(document.querySelector("#counter"));
+import { foodProducts } from "./foods.js";
 
 document.querySelector(".btn").addEventListener("click", function () {
-  if (document.body.classList.contains("cold")) {
+  document.body.classList.add("hot");
+
+  /*  if (document.body.classList.contains("cold")) {
     document.body.classList.add("hot");
     document.body.classList.remove("cold");
-  }
+  }*/
 });
+
+/*function removeCards(cards) {
+  document.querySelector(".container").innerHTML = "";
+}
+removeCards();*/

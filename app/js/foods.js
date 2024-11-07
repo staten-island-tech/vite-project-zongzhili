@@ -1,12 +1,3 @@
-export function setupCounter(element) {
-  let counter = 0;
-  const setCounter = (count) => {
-    counter = count;
-    element.innerHTML = `count is ${counter}`;
-  };
-  element.addEventListener("click", () => setCounter(counter + 1));
-  setCounter(0);
-}
 const foodProducts = [
   {
     item: "Spicy Ramen",
@@ -149,6 +140,7 @@ const foodProducts = [
       "https://az727718.vo.msecnd.net/e5184b75632349358c9031c2ef988e6b/images/9981edb797ba478192e3240d3dca9dcc_1080w.jpg",
   },
 ];
+export { foodProducts };
 
 const container = document.getElementById("container");
 
@@ -162,7 +154,7 @@ foodProducts.forEach((food) => {
   );
 });
 
-foodProducts.filter((food) => {
+/*foodProducts.filter((food) => {
   food.price >= 10;
 });
-console.log("Expensive Foods", food.price);
+console.log("Expensive Foods", food.price);*/
