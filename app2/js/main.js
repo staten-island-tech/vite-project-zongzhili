@@ -1,5 +1,5 @@
 import "/styles/style.css";
-import { foodProducts } from "./foods.js";
+import { foodProducts } from "../js/food.js";
 
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("cold")) {
