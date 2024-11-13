@@ -141,8 +141,3 @@ const foodProducts = [
   },
 ];
 export { foodProducts };
-
-/*foodProducts.filter((food) => {
-  food.price >= 10;
-});
-console.log("Expensive Foods", food.price);*/

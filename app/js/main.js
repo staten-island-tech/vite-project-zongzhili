@@ -23,6 +23,11 @@ foodProducts.forEach((food) => {
   );
 });
 
+/*foodProducts.filter((food) => {
+  food.price >= 10;
+});
+console.log("Expensive Foods", food.price);*/
+
 /*function removeCards(cards) {
   document.querySelector(".container").innerHTML = "";
 }
