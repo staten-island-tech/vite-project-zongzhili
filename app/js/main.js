@@ -11,6 +11,18 @@ document.querySelector(".btn").addEventListener("click", function () {
   }
 });
 
+const container = document.getElementById("container");
+
+foodProducts.forEach((food) => {
+  container.insertAdjacentHTML(
+    "beforeend",
+    `<div class = "foods">
+      <img src="${food.image}" alt="${food.item}">
+      <p>${food.item} - $${food.price} (${food.nationality})</p>
+    </div>`
+  );
+});
+
 /*function removeCards(cards) {
   document.querySelector(".container").innerHTML = "";
 }

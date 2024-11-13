@@ -142,18 +142,6 @@ const foodProducts = [
 ];
 export { foodProducts };
 
-const container = document.getElementById("container");
-
-foodProducts.forEach((food) => {
-  container.insertAdjacentHTML(
-    "beforeend",
-    `<div class = "foods">
-      <img src="${food.image}" alt="${food.item}">
-      <p>${food.item} - $${food.price} (${food.nationality})</p>
-    </div>`
-  );
-});
-
 /*foodProducts.filter((food) => {
   food.price >= 10;
 });
