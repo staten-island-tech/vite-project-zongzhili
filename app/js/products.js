@@ -53,11 +53,11 @@ const foodProducts = [
       "https://omnivorescookbook.com/wp-content/uploads/2022/05/220510_Mapo-Tofu_550.jpg",
   },
   {
-    item: "Piri Piri Chicken",
+    item: "Tacos",
     price: 15.0,
-    nationality: "Portuguese",
+    nationality: "Mexican",
     image:
-      "https://realfood.tesco.com/media/images/Piri-piri-chicken-recipe-636x418-577b651f-f318-4eca-b7f0-cdc8d9fb9c4a-0-636x418.jpg",
+      "https://www.allrecipes.com/thmb/qWvc3DAtgp4sVE40nPKQiTW0OoI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/70935-taqueria-style-tacos-mfs-1x2-40-691efd4df7f14cdd8280ca9d7a62692e.jpg",
   },
   {
     id: "asian",
@@ -130,7 +130,7 @@ const foodProducts = [
   {
     id: "salad",
     id: "asian",
-    item: "Chilled Noodle Salad",
+    item: "Noodle Salad",
     price: 9.75,
     nationality: "Chinese",
     image:
