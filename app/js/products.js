@@ -1,5 +1,6 @@
 const foodProducts = [
   {
+    id: "asian",
     item: "Spicy Ramen",
     price: 12.99,
     nationality: "Japanese",
@@ -14,6 +15,7 @@ const foodProducts = [
       "https://www.budgetbytes.com/wp-content/uploads/2024/01/buffalo-wings-overhead-horizontal-WR-scaled.jpg",
   },
   {
+    id: "asian",
     item: "Vindaloo Curry",
     price: 14.0,
     nationality: "Indian",
@@ -21,6 +23,7 @@ const foodProducts = [
       "https://niksharmacooks.com/wp-content/uploads/2022/12/Chicken-VindalooDSC_6147.jpg",
   },
   {
+    id: "asian",
     item: "Kimchi Jjigae",
     price: 11.0,
     nationality: "Korean",
@@ -42,6 +45,7 @@ const foodProducts = [
       "https://carlsbadcravings.com/wp-content/uploads/2021/05/Harissa-Chicken-5.jpg",
   },
   {
+    id: "asian",
     item: "Mapo Tofu",
     price: 10.25,
     nationality: "Chinese",
@@ -56,6 +60,7 @@ const foodProducts = [
       "https://realfood.tesco.com/media/images/Piri-piri-chicken-recipe-636x418-577b651f-f318-4eca-b7f0-cdc8d9fb9c4a-0-636x418.jpg",
   },
   {
+    id: "asian",
     item: "Szechuan Hot Pot",
     price: 18.0,
     nationality: "Chinese",
@@ -70,6 +75,7 @@ const foodProducts = [
       "https://i0.wp.com/evseats.com/wp-content/uploads/2022/06/saucy-jerk-chicken-wings.-1-scaled.jpg?resize=720%2C720&ssl=1",
   },
   {
+    id: "salad",
     item: "Caesar Salad",
     price: 9.5,
     nationality: "Italian",
@@ -77,6 +83,7 @@ const foodProducts = [
       "https://www.allrecipes.com/thmb/mXZ0Tulwn3x9_YB_ZbkiTveDYFE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/229063-Classic-Restaurant-Caesar-Salad-ddmfs-4x3-231-89bafa5e54dd4a8c933cf2a5f9f12a6f.jpg",
   },
   {
+    id: "asian",
     item: "Sushi",
     price: 15.0,
     nationality: "Japanese",
@@ -98,6 +105,7 @@ const foodProducts = [
       "https://www.eatingbirdfood.com/wp-content/uploads/2024/05/poke-bowl-process-6.jpg",
   },
   {
+    id: "salad",
     item: "Caprese Salad",
     price: 10.0,
     nationality: "Italian",
@@ -112,6 +120,7 @@ const foodProducts = [
       "https://www.feastingathome.com/wp-content/uploads/2015/04/Ceviche-Recipe.jpg",
   },
   {
+    id: "salad",
     item: "Greek Salad",
     price: 11.0,
     nationality: "Greek",
@@ -119,6 +128,8 @@ const foodProducts = [
       "https://www.italianbellavita.com/wp-content/uploads/2022/08/739C7136-CBA2-4DDC-8D56-ECA409F69AB9-3-720x720.jpeg",
   },
   {
+    id: "salad",
+    id: "asian",
     item: "Chilled Noodle Salad",
     price: 9.75,
     nationality: "Chinese",
@@ -126,9 +137,10 @@ const foodProducts = [
       "https://static01.nyt.com/images/2021/06/18/dining/hm-cold-noodle-salad/merlin_189371982_fe2a424a-73a9-4e56-b4e7-b77f4dfe544c-superJumbo.jpg",
   },
   {
+    id: "salad",
     item: "Fruit Salad",
     price: 7.5,
-    nationality: "International",
+    nationality: "Global",
     image:
       "https://www.momontimeout.com/wp-content/uploads/2021/06/fruit-salad-square-500x500.jpeg",
   },

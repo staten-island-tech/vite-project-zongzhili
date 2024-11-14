@@ -1,5 +1,5 @@
 import "/styles/style.css";
-import { foodProducts } from "../js/food.js";
+import { foodProducts } from "./products.js";
 
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("cold")) {
@@ -23,12 +23,36 @@ foodProducts.forEach((food) => {
   );
 });
 
-/*foodProducts.filter((food) => {
-  food.price >= 10;
-});
-console.log("Expensive Foods", food.price);*/
+document.getElementById("asianDishes").addEventListener("click", function () {
+  document.getElementById("container").innerHTML = "";
 
-/*function removeCards(cards) {
-  document.querySelector(".container").innerHTML = "";
-}
-removeCards();*/
+  const asianDishes = foodProducts.filter((asian) => asian.id === "asian");
+
+  asianDishes.forEach((food) => {
+    document.getElementById("container").insertAdjacentHTML(
+      "beforeend",
+      `<div class="foods">
+        <img src="${food.image}" alt="${food.item}">
+        <p>${food.item} - $${food.price} (${food.nationality})</p>
+      </div>`
+    );
+  });
+});
+
+document.getElementById("salad").addEventListener("click", function () {
+  document.getElementById("container").innerHTML = "";
+
+  const sortSalad = foodProducts.sort((a, b) => a.price - b.price);
+
+  sortSalad.forEach((food) => {
+    if (food.id === "salad") {
+      document.getElementById("container").insertAdjacentHTML(
+        "beforeend",
+        `<div class="foods">
+          <img src="${food.image}" alt="${food.item}">
+          <p>${food.item} - $${food.price} (${food.nationality})</p>
+        </div>`
+      );
+    }
+  });
+});
