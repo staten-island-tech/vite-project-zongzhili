@@ -1,0 +1,10 @@
+.hot{
+    --primary: var(--light-red);
+    --secondary: var(--dark-red);
+    background-color: var(--primary);
+}
+.cold{
+    --primary: var(--light-blue);
+    --secondary: var(--dark-blue);
+    background-color: var(--primary);
+}
