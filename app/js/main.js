@@ -11,17 +11,19 @@ document.querySelector(".btn").addEventListener("click", function () {
   }
 });
 
-const container = document.getElementById("container");
 foodProducts.sort((a, b) => a.price - b.price);
 
+const container = document.getElementById("container");
+
+const createCards = (food) => `
+  <div class="foods">
+    <img src="${food.image}" alt="${food.item}">
+    <h4>${food.item}<br></h4>
+    <h5>$${food.price} (${food.nationality})</h5>
+  </div>`;
+
 foodProducts.forEach((food) => {
-  container.insertAdjacentHTML(
-    "beforeend",
-    `<div class = "foods">
-      <img src="${food.image}" alt="${food.item}">
-      <h4>${food.item}<br></h4> <h5>$${food.price} (${food.nationality})</h5>
-    </div>`
-  );
+  container.insertAdjacentHTML(`beforeend`, createCards(food));
 });
 
 document.getElementById("asianDishes").addEventListener("click", function () {
@@ -30,43 +32,27 @@ document.getElementById("asianDishes").addEventListener("click", function () {
   const asianDishes = foodProducts.filter((asian) => asian.id === "asian");
 
   asianDishes.forEach((food) => {
-    document.getElementById("container").insertAdjacentHTML(
-      "beforeend",
-      `<div class = "foods">
-        <img src="${food.image}" alt="${food.item}">
-        <h4>${food.item}<br></h4> <h5>$${food.price} (${food.nationality})</h5>
-      </div>`
-    );
+    document
+      .getElementById("container")
+      .insertAdjacentHTML(`beforeend`, createCards(food));
   });
 });
 
 document.getElementById("salad").addEventListener("click", function () {
   document.getElementById("container").innerHTML = "";
 
-  const sortSalad = foodProducts.sort((a, b) => a.price - b.price);
+  const salads = foodProducts.filter((food) => food.id === "salad");
 
-  sortSalad.forEach((food) => {
-    if (food.id === "salad") {
-      document.getElementById("container").insertAdjacentHTML(
-        "beforeend",
-        `<div class = "foods">
-          <img src="${food.image}" alt="${food.item}">
-          <h4>${food.item}<br></h4> <h5>$${food.price} (${food.nationality})</h5>
-        </div>`
-      );
-    }
+  salads.forEach((food) => {
+    document
+      .getElementById("container")
+      .insertAdjacentHTML(`beforeend`, createCards(food));
   });
 });
 
 document.getElementById("all").addEventListener("click", function () {
   document.getElementById("container").innerHTML = "";
   foodProducts.forEach((food) => {
-    container.insertAdjacentHTML(
-      "beforeend",
-      `<div class = "foods">
-        <img src="${food.image}" alt="${food.item}">
-        <h4>${food.item}<br></h4><h5>$${food.price} (${food.nationality})</h5>
-      </div>`
-    );
+    container.insertAdjacentHTML(`beforeend`, createCards(food));
   });
 });

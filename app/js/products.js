@@ -128,13 +128,12 @@ const foodProducts = [
       "https://www.italianbellavita.com/wp-content/uploads/2022/08/739C7136-CBA2-4DDC-8D56-ECA409F69AB9-3-720x720.jpeg",
   },
   {
-    id: "salad",
     id: "asian",
-    item: "Noodle Salad",
+    item: "Pho",
     price: 9.75,
-    nationality: "Chinese",
+    nationality: "Vietnam",
     image:
-      "https://static01.nyt.com/images/2021/06/18/dining/hm-cold-noodle-salad/merlin_189371982_fe2a424a-73a9-4e56-b4e7-b77f4dfe544c-superJumbo.jpg",
+      "https://www.allrecipes.com/thmb/EbqrYyFsDjrCM3KTN7fUHr78Z84=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/57354-Beef-Pho-DDMFS-3x4-0615-49503be6698c4771a88400caa1c45795.jpg",
   },
   {
     id: "salad",
